@@ -1,0 +1,41 @@
+@import 'header';
+@import 'footer';
+
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+
+body {
+  margin-left: 126px;
+  margin: 126px;
+  width: 100%;
+  height: 100vh;
+}
+
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+
+
+.navbar {
+
+    &__nav ul {
+      list-style: none;
+      display: flex;
+  
+    &__li a {
+        text-decoration: none;
+        color: $header-text-color;
+        font-weight: bold;
+      }
+    }
+  }''

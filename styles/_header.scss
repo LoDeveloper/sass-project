@@ -1,24 +1,28 @@
 
 
+.logo img {
+    width: 120px;
+}
 
-.header {
+  .nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
+    padding: 20px;
+    margin: 20px;
+    background-color: white;
 
-
-
-.navbar {
-
-    &__nav ul {
-      list-style: none;
-      display: flex;
-  
-    &__li a {
-        text-decoration: none;
-        color: $header-text-color;
-        font-weight: bold;
-      }
+    &__links {
+    display: flex;
+    list-style: none;
+    gap: 30px;
     }
-  }''
+
+    &__links li a {
+    text-decoration: none;
+    justify-content: flex-end;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    color: #333;
+    }
+}
