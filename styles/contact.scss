@@ -12,19 +12,33 @@
 body {
   margin-left: 126px;
   margin: 126px;
-  width: 100%;
+  width: auto;
   height: 100vh;
   font-family: "Mulish", sans-serif;
 }
 
+
 .contact-container {
   display: flexbox;
   align-items: center;
-  justify-content: space-evenly
+  justify-content: space-evenly;
+  padding: 20px;
+  margin-top: 110px;
+
+  .contact-text {
+    text-align: start;
+    
+    h1 {
+      line-height: 2;
+    }
+  }
     
 }
 
+
+
 .form {
+  text-align: right;
   float: right;
   width: 475PX;
   height: auto; 
@@ -40,10 +54,12 @@ body {
 
           .input-field {
             border: none;
+            border-bottom: 1px solid #eaeaea;
           }
 
           textarea {
             border: none;
+            border-bottom: 1px solid #979797;
           }
           
           button {
@@ -65,7 +81,10 @@ body {
 
 }
 
-
+.map img {
+  width: auto;
+  height: 100%;
+}
 
 
 
