@@ -1,9 +1,7 @@
-
-$primaryColor: #4A4FF2;
-
 @import 'header';
 @import 'footer';
 @import 'grid-container';
+@import 'variables';
 
 @mixin flexCenter{
     display: flexbox;
@@ -23,7 +21,7 @@ body {
     margin: 126px;
     width: auto;
     height: 100vh;
-    font-family: "Mulish", sans-serif;
+    font-family: $fontPrimary;
 }
 
 /*Hero section*/
@@ -77,8 +75,54 @@ body {
 .portfolio {
     display: flexbox;
     width: auto;
+    overflow: hidden;
 }
 
+/*text section */
+
+.services {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 90px;
+
+        h2 {
+            max-width: 40%;
+            height: auto;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        
+        .service-list {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+        
+        .service-list li {
+            color: #111111;
+            padding: 8px 16px;
+            border-radius: 4px;
+        }
+    
+}
+
+
+/*Awards section */
+
+.awards {
+    display: flexbox;
+    justify-content: space-between;
+    margin-top: 100px;
+
+    .container {
+   
+    }
+
+    .awards-table {
+
+    }
+}
 
 
 /*Footer*/

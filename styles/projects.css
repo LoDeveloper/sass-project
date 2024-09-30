@@ -64,40 +64,63 @@ body {
   font-family: "Mulish", sans-serif;
 }
 
-.project-content {
+.project-main {
   display: flexbox;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
-  width: auto;
-  flex-direction: column;
+  width: 100%;
+  height: auto;
+  margin: 20px;
 }
-.project-content .project-details {
+.project-main .project-content {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.project-main .project-details {
   line-height: 1.5;
-  width: 635px;
+  width: 60%;
   height: auto;
   text-align: start;
 }
+.project-main .project-details h1 {
+  font-size: 40px;
+}
+.project-main .project-info {
+  float: right;
+  line-height: 2;
+  align-items: baseline;
+}
+
 .project.gallery {
   display: flexbox;
   justify-content: center;
+}
+
+p {
+  color: #979797;
+  margin: 20px;
 }
 
 .main-img {
   width: 100%;
   height: auto;
   justify-content: center;
+  margin-top: 60px;
 }
 
 .gallery-images {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
-  width: auto;
+  width: 100%;
+  height: auto;
+  gap: 30px;
 }
 .gallery-images .gallery-item {
   display: flexbox;
-  grid-gap: 20px;
   align-items: center;
   justify-content: center;
   height: auto;
+  width: 100%;
 }/*# sourceMappingURL=projects.css.map */
