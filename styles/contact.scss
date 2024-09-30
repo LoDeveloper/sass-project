@@ -19,73 +19,72 @@ body {
 }
 
 
+/* Main Content Section */
 .contact-container {
-  display: flexbox;
-  align-items: center;
-  justify-content: space-evenly;
-  padding: 20px;
-  margin-top: 110px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 40px 100px;
+  margin-top: 20px;
+}
 
-  .contact-text {
-    text-align: start;
-    
-    h1 {
-      line-height: 2;
-    }
-  }
-    
+.contact-info {
+  max-width: 50%;
+
+      .contact-info h1 {
+        font-size: 36px;
+        margin-bottom: 10px;
+        font-weight: 700;
+      }
+      
+      .contact-info p {
+        font-size: 16px;
+        color: #666;
+      }
+  
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+
+      input,
+      textarea {
+        padding: 12px;
+        margin-bottom: 20px;
+        border: none;
+        border-bottom: 1px solid #979797;
+        font-size: 16px;
+      }
+      
+      button {
+        background-color: $primaryColor;
+        width: 125px;
+        height: 50px;
+        border: none;
+        color: #fff;
+        font-size: 16px;
+        cursor: pointer;
+
+              &:hover {
+                background-color: #fff;
+                color: #4A4FF2;
+                font-weight: bold;
+                border: 2px solid $primaryColor;
+        
+            }
+      }
 }
 
 
 
-.form {
-  text-align: right;
-  float: right;
-  width: 475PX;
-  height: auto; 
-  padding: 20px;
-  border: none;
-  color: #979797;
-  font-size: 16px;
-
-          label {
-            color: #979797;
-            font-weight: bold;
-          }
-
-          .input-field {
-            border: none;
-            border-bottom: 1px solid #eaeaea;
-          }
-
-          textarea {
-            border: none;
-            border-bottom: 1px solid #979797;
-          }
-          
-          button {
-            background-color: $primaryColor;
-            width: 125px;
-            height: 50px;
-            border: none;
-            color: #fff;
-            font-size: 16px;
-
-            &:hover {
-              background-color: #fff;
-              color: #4A4FF2;
-              font-weight: bold;
-              border: 2px solid $primaryColor;
-            }
-          }
-
-
+/* Map Section */
+.map {
+  margin-top: 40px;
 }
 
 .map img {
-  width: auto;
-  height: 100%;
+  width: 100%;
+  height: auto;
 }
-
-
-
