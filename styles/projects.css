@@ -92,23 +92,21 @@ body {
   width: 90%;
 }
 
+/*Project  content section*/
 .project-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 0 10%;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 100%;
+  height: auto;
 }
 
 .project-details {
   line-height: 2;
-  width: 100%;
-  height: auto;
+  width: 50%;
   text-align: start;
 }
 
@@ -119,6 +117,7 @@ body {
 
 .project-info {
   margin-top: 138px;
+  margin-left: 140px;
   line-height: 2;
   text-align: left;
   border-bottom: 1px solid #888;
@@ -126,6 +125,7 @@ body {
 
 .project-info table {
   width: 100%;
+  justify-self: flex-end;
 }
 
 .project-info th, .project-info td {
@@ -135,27 +135,14 @@ body {
 
 /*Project gallery section*/
 .project-gallery {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  display: block;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-}
-
-.gallery-text {
-  color: #979797;
   width: 100%;
-  margin-top: 40px;
-  margin-bottom: 40px;
-  line-height: 2;
 }
 
 .main-image img {
@@ -164,14 +151,20 @@ body {
   margin-bottom: 20px;
 }
 
+.gallery-text {
+  color: #979797;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  line-height: 2;
+}
+
 .gallery-images {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  gap: 20px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .gallery-images .gallery-item {
   width: 100%;

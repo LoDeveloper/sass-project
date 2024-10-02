@@ -26,29 +26,31 @@ body {
     width: 90%;
 }
 
+/*Project  content section*/
+
 .project-content {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 0 10%; 
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    height: auto;
+    
 }
 
-
 .project-details {
-            line-height: 2;
-            width: 100%;
-            height: auto;
-            text-align: start;
+    line-height: 2;
+    width: 50%;
+    text-align: start;
  }
 
 .project-details h1 {
-            font-size: 40px;
-            width: 50%;
+    font-size: 40px;
+    width: 50%;
     
  }
 
 .project-info {
         margin-top: 138px;
+        margin-left: 140px;
         line-height: 2;
         text-align: left;
         border-bottom: 1px solid #888;
@@ -56,6 +58,7 @@ body {
 
 .project-info table {
     width: 100%;
+    justify-self: flex-end;
 }
 
 .project-info th, .project-info td {
@@ -66,33 +69,29 @@ body {
 /*Project gallery section*/
     
 .project-gallery {
-        display: flex;
-        justify-content: flex-start;
+        display: block;
+        justify-content: center;
         align-items: center;
-        flex-direction: row;
+        width: 100%; 
 }
-
-
-.gallery-text {
-        color: #979797;
-        width: 100%;
-        margin-top: 40px;
-        margin-bottom: 40px;
-        line-height: 2;
-     }
 
 
 .main-image img {
-        width: 100%;
-        height: auto;
-        margin-bottom: 20px;
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
 }
-    
+
+.gallery-text {
+    color: #979797;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    line-height: 2;
+ }
 
 .gallery-images {
     display: flex;
-    justify-content: space-between;
-    gap: 20px;
+    justify-content: center;
 
     .gallery-item {
         width: 100%;
