@@ -82,7 +82,7 @@
   -ms-grid-rows: 6fr 20px 1fr 20px 6fr 20px 2fr 20px 7fr 20px 1fr 20px 3fr 20px 6fr;
   grid-template-rows: 6fr 1fr 6fr 2fr 7fr 1fr 3fr 6fr;
   height: 1960px;
-  width: 1110px;
+  width: auto;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -326,38 +326,17 @@ body {
 }
 .container h6 {
   text-align: right;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
   font-style: italic;
   font-size: 18px;
   color: #111111;
 }
 
-/*Portfolio*/
-.portfolio {
-  padding: 0 100px;
-}
-.portfolio grid-container {
-  display: -ms-grid;
-  display: grid;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-  height: 100vh;
-}
-.portfolio portfolio-item {
-  position: relative;
-}
-.portfolio portfolio-item img {
-  width: 100%;
-  height: auto;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
+/*Portfolio*
+
+
 
 /*Awards section */
 .services {
