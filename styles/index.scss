@@ -26,7 +26,6 @@ body {
 /*Hero section*/
 
 .container {
-    @include flexCenter();
     height: 100%;
     width: auto;
 
@@ -69,62 +68,39 @@ body {
 }
 
 
-/*Portfolio*/
+/*Portfolio*
 
-.portfolio {
-    display: flexbox;
-    width: auto;
-    overflow: hidden;
-}
-
-/*text section */
-
-.services {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 90px;
-
-        h2 {
-            max-width: 40%;
-            height: auto;
-            font-size: 28px;
-            font-weight: bold;
-        }
-        
-        .service-list {
-            list-style: none;
-            display: flex;
-            flex-direction: column;
-            flex-wrap: wrap;
-        }
-        
-        .service-list li {
-            color: #111111;
-            padding: 8px 16px;
-            border-radius: 4px;
-        }
-    
-}
 
 
 /*Awards section */
-
-.awards {
-    display: flexbox;
+.services {
+    display: flex;
     justify-content: space-between;
-    margin-top: 100px;
-
-    .container {
-   
-    }
-
-    .awards-table {
-
-    }
+    padding: 50px 100px;
 }
 
+.services h2 {
+    width: 50%;
+}
 
-/*Footer*/
+.service-list {
+    list-style: none;
+}
 
+.service-list li {
+    margin: 10px 0;
+}
 
+/* Awards */
+.awards {
+    padding: 50px 100px;
+}
 
+.awards-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.awards-table td {
+    padding: 10px;
+}

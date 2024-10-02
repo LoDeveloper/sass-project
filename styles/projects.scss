@@ -2,6 +2,12 @@
 @import 'footer';
 @import 'variables';
 
+@mixin flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 * {
     box-sizing: border-box;
     padding: 0;
@@ -10,7 +16,6 @@
 
 
 body {
-    margin-left: 126px;
     margin: 126px;
     width: auto;
     height: 100vh;
@@ -18,69 +23,80 @@ body {
 }
 
 .project-main {
-    @include flexCenter();
-    width: 100%;
-    height: auto;
-    margin: 20px;
+    width: 90%;
+}
 
-        .project-content {
-            display: flex;
-            align-items: center;
-            justify-content: flex-start;
-        }
+.project-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 10%; 
+}
 
-        .project-details {
-            line-height: 1.5;
-            width: 60%;
+
+.project-details {
+            line-height: 2;
+            width: 100%;
             height: auto;
             text-align: start;
-        }
+ }
 
-        .project-details h1 {
+.project-details h1 {
             font-size: 40px;
-        }
-
-        .project-info {
-        float: right;
-        line-height: 2;
-        align-items: baseline;
-        }
-
-}
-
+            width: 50%;
     
-.project.gallery {
-    display: flexbox;
-    justify-content: center;
+ }
+
+.project-info {
+        margin-top: 138px;
+        line-height: 2;
+        text-align: left;
+        border-bottom: 1px solid #888;
 }
 
-p {
+.project-info table {
+    width: 100%;
+}
+
+.project-info th, .project-info td {
+    text-align: left;
+    padding: 10px 0;
+}
+
+/*Project gallery section*/
+    
+.project-gallery {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: row;
+}
+
+
+.gallery-text {
         color: #979797;
-        margin: 20px;
+        width: 100%;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        line-height: 2;
      }
 
 
-.main-img {
-    width: 100%;
-    height: auto;
-    justify-content: center;
-    margin-top: 60px;
+.main-image img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
 }
+    
 
 .gallery-images {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    height: auto;
-    gap: 30px;
+    gap: 20px;
 
     .gallery-item {
-        display: flexbox;
-        align-items: center;
-        justify-content: center;
-        height: auto;
         width: 100%;
+        height: auto;
     }
 }
 
